@@ -1,0 +1,130 @@
+
+:root{
+  --main-color:#ff6e61;
+  --section:#f1f3f4;
+  --final-sec:#11151d;
+}
+  /* *{
+    margin: 0;
+    padding: 0;
+  } */
+
+@import url("https://fonts.googleapis.com/css2?family=Changa:wght@800&family=Lalezar&display=swap");
+.main-btn {
+  background-color:var(--main-color) !important;
+  color: white !important;
+  border: none !important;
+  border-radius: 0 !important;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+  transition: .7s;
+}
+nav .logo{
+  max-width: 8%;
+}
+nav .logo-text{
+  margin-right: 35px;
+  font-size: large;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+a{
+text-decoration-line: none;
+color: inherit;
+}
+ li{
+    list-style: none;
+  }
+
+
+nav  li ,.links li {
+  margin-right: 15px;
+  
+ }
+ header  a , .logo-text {
+font-family:"neckar-bold" !important;
+ font-size: 18  px;
+
+ }
+
+ .links li {
+  background-color: red;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  padding-top: 2px;
+  
+}
+.links li .twitter:hover{
+  color: rgb(233, 191, 231);
+}
+.links li .facebook:hover{
+  color: rgb(190, 66, 184);
+}
+.links li .youtube:hover{
+  color: rgb(199, 54, 35);
+}
+
+main{
+  height: auto;
+}
+
+
+img {
+  max-width: 100%;  
+  height: auto;
+}
+
+p {
+  text-align: center;
+}
+
+.bottom-right {
+  position: absolute;
+  bottom:20%;
+  right: 8%;
+}
+
+/* detail-news */
+.ntetwork-title .title{
+  font-weight: bold;
+}
+.full-desc p{
+  text-align: justify;
+  line-height: 2;
+  color: #5f6266;
+}
+.hash-tag span{
+  border: 2px solid rgba(141, 135, 135, 0.322);
+  border-radius: 50px;
+  padding: 10px 35px;
+
+}
+.social-links ul .twitter  {
+  background-color: rgb(233, 191, 231);
+}
+.social-links ul .facebook  {
+  background-color: rgb(190, 66, 184);
+}
+.social-links ul .messanger  {
+  background-color: rgb(175, 145, 192);
+}
+.mark-title{
+  border: 1.5px solid rgba(0, 0, 0, 0.918);
+  margin-left: 10px;
+
+}
+.more-news{
+  font-size: 16pt;
+  font-weight:500 ;
+  display: inline-block;
+}
+
+
+/* start footer */
+footer{
+  background-color: var(--final-sec);
+}
+
