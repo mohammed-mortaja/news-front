@@ -90,7 +90,7 @@ font-family:"neckar-bold" !important;
   height: 110px;
 }
 
-.local-category .time{
+.template-main  .time{
   color: #ebf2f3c2;
   font-size: 14px;
 }
@@ -125,7 +125,7 @@ p {
   left: 8%;
 }
 .two-main-news .tag ,
-.sub-cat-news .tag{
+.template-sub .tag{
   border: 1.5px solid rgba(0, 0, 0, 0.918);
   padding: 3px 15px;
   border-radius: 10px;
@@ -134,7 +134,15 @@ p {
   display: inline-block;
 
 }
-
+.template-two{
+  background-image: linear-gradient(rgb(5, 5, 5), rgb(56, 56, 53));
+}
+.template-two .bottom-right{
+  position: absolute;
+  bottom:5%;
+  right: 15%;
+  width: 70%;
+}
 
 /* detail-news */
 .ntetwork-title .title{
