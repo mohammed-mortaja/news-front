@@ -134,7 +134,7 @@ p {
   display: inline-block;
 
 }
-.template-two{
+.bg-black-sec{
   background-image: linear-gradient(rgb(5, 5, 5), rgb(56, 56, 53));
 }
 .template-two .bottom-right{
@@ -173,11 +173,19 @@ p {
   margin-left: 10px;
 
 }
+.mark-title-spec{
+  border: 1.5px solid rgba(255, 255, 255, 0.918);
+  margin-left: 10px;
+
+}
+
+
 .more-news{
   font-size: 16pt;
   font-weight:500 ;
   display: inline-block;
 }
+
 
 /* album-image */
 .img-num{
