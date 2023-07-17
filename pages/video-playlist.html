@@ -1,77 +1,238 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-
-       <!-- Bootstrap core CSS -->
-       <link href="../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.1/css/bootstrap-grid.min.css"
-           integrity="sha512-Aa+z1qgIG+Hv4H2W3EMl3btnnwTQRA47ZiSecYSkWavHUkBF2aPOIIvlvjLCsjapW1IfsGrEO3FU693ReouVTA=="
-           crossorigin="anonymous" referrerpolicy="no-referrer" />
-   
-       <!-- Custom styles for this template -->
-       <link rel="stylesheet" href="../assets/css/style.css">
-       <link rel="stylesheet" href="../assets/css/lightbox.css">
-   
-       <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.2.1/css/all.css">
-       <link rel="stylesheet" type="text/css" href="https://www.fontstatic.com/f=neckar-bold" />
-   
-</head>
-<body class="bg-light"> 
-
-<h3 class="heading">video gallery</h3>
-<div class="cont-vid" dir="rtl">
-    <div class="main-video">
-        <div class="video active">
-            <video src="../assets/160767 (720p).mp4"  muted >
-            </video>
-            <h3 class="title">01. video title</h3>
-        </div>
-    </div>
-    <div class="video-list">
+<html lang="ar" dir="rtl">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <!-- Bootstrap core CSS -->
+        <link href="../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     
-        <div class="vid">
-            <video src="../assets/160767 (720p).mp4" controls muted autoplay>
-            </video>
-            <h3 class="title">01. video title</h3>
-        </div>
-        <div class="vid">
-            <video src="../assets/160767 (720p).mp4" controls muted autoplay>
-            </video>
-            <h3 class="title">02. video title</h3>
-        </div>
-        <div class="vid">
-            <video src="../assets/160767 (720p).mp4" controls muted autoplay>
-            </video>
-            <h3 class="title">03. video title</h3>
-        </div>
-        <div class="vid">
-            <video src="../assets/160767 (720p).mp4" controls muted autoplay>
-            </video>
-            <h3 class="title">04. video title</h3>
+        <!--  styles for this template -->
+        <link rel="stylesheet" href="../assets/css/style.css">
+        <link rel="stylesheet" href="../assets/css/lightbox.css">
+    
+        <!-- icons -->
+        <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.2.1/css/all.css">
+    
+        <!-- fonts -->
+        <!-- <link rel="stylesheet" type="text/css" href="https://www.fontstatic.com/f=neckar-bold" /> -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Harmattan:wght@500&display=swap">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Harmattan:wght@500&family=Marhey&display=swap">
+    </head>
+<body class="bg-light">
+    <header class="nav-scrolled">
+
+        <nav class="navbar navbar-light navbar-expand-lg bg-body-tertiary">
+            <div class="container align-items-center">
+                <a class="navbar-brand" href="#">
+                    <div class="logo  d-flex flex-column align-items-start">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="87px"
+                            height="51px">
+                            <image x="0px" y="0px" width="87px" height="51px"
+                                xlink:href="data:img/png;base64,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" />
+                        </svg>
+                        <span class="logo-text ">الاخباري</span>
+                    </div>
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fa-duotone fa-bars text-danger"></i>
+            </button>
+                <div class="collapse  navbar-collapse" id="navbarSupportedContent">
+                    <ul class=" navbar-nav mr-auto mb-2 mb-lg-0">
+                        <li class="nav-item active-item">
+                            <a class="nav-link active " aria-current="page" href="../pages/index.html">الرئيسية</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link " href="">الاخبار</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="">تقارير خاصة</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="">مقالات</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/video-library.html">فيديو </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/contact.html">اتصل بنا</a>
+                        </li>
+                        <ul class="navbar-nav mr-auto mb-2 mb-lg-0   text-white links ">
+                            <li class="d-inline-block mb-sm-3 "><a class="twitter" href=""><i
+                                        class="fab fa-twitter"></i></a></li>
+                            <li class="d-inline-block mb-sm-3 "><a class="facebook" href=""><i
+                                        class="fab fa-facebook-f"></i></a></li>
+                            <li class="d-inline-block mb-sm-3 "><a class="youtube" href=""><i
+                                        class="fab fa-youtube"></i></a></li>
+                            <li class="d-inline-block mb-sm-3 "><a href=""><i class="fal fa-search"></i></a></li>
+                        </ul>
+                    </ul>
+
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+    <div class="vedio-sec bg-black-sec py-3">
+
+        <div class="cont-vid" dir="rtl">
+
+            <div class="main-video">
+                <div class="text-right  mb-3 container">
+                    <span class=" mark-title-spec">
+                    </span>
+                    <span class="more-news text-white">مكتبة الفيديو</span>
+                </div>
+                <div class="video active">
+                    <video src="../assets/160767 (720p).mp4" controls autoplay>
+                    </video>
+                    <h3 dir="" class="title text-white text-right">01. video title</h3>
+                </div>
+            </div>
+            <div class="video-list ">
+                <div class="text-right  mb-3 container">
+                    <i class="fa-light fa-film"></i>
+                    <span class="more-news text-white">شاهد </span>
+                </div>
+                <div class="vid">
+                    <video src="../assets/160767 (720p).mp4" controls muted autoplay>
+                    </video>
+                    <h3 class="title">01. video title</h3>
+                </div>
+                <div class="vid">
+                    <video src="../assets/160767 (720p).mp4" controls muted autoplay>
+                    </video>
+                    <h3 class="title">02. video title</h3>
+                </div>
+                <div class="vid">
+                    <video src="../assets/160767 (720p).mp4" controls muted autoplay>
+                    </video>
+                    <h3 class="title">03. video title</h3>
+                </div>
+                <div class="vid">
+                    <video src="../assets/160767 (720p).mp4" controls muted autoplay>
+                    </video>
+                    <h3 class="title">04. video title</h3>
+                </div>
+                <div class="vid">
+                    <video src="../assets/160767 (720p).mp4" controls muted autoplay>
+                    </video>
+                    <h3 class="title">04. video title</h3>
+                </div>
+                <div class="vid">
+                    <video src="../assets/160767 (720p).mp4" controls muted autoplay>
+                    </video>
+                    <h3 class="title">04. video title</h3>
+                </div>
+            </div>
         </div>
     </div>
-</div>
+
+    <div class="pt-5 pb-2">
+        <div class="text-right container">
+            <span class=" mark-title">
+            </span>
+            <span class="more-news text-black ">الاكثر مشاهدة
+            </span>
+        </div>
+    </div>
+    <div class="">
+        <div class="container-3-video ">
+            <div style="width: 350px;" class="card  ">
+                <video style="width: 350px; " width="" height="" controls>
+                    <!-- test inert real vedio -->
+                    <source src="../assets/160767 (720p).mp4" type=video/mp4>
+                </video>
+                <a href="../pages/images.html">
+                    <div class="card-body">
+
+                        <h5 class="card-text text-right ">لأول مرة،، هاتف آيفون يحتوي منفذين لبطاقات الاتصال SIM
+                            .</h5>
+                    </div>
+                </a>
+                <div class="container text-black-50 pb-2 bg-white text-right">
+                    <span class="date">25/3/2000</span>
+                </div>
+            </div>
+            <div style="width: 350px;" class="card  ">
+                <video style="width: 350px; " width="" height="" controls>
+                    <!-- test inert real vedio -->
+                    <source src="../assets/160767 (720p).mp4" type=video/mp4>
+                </video>
+                <a href="../pages/images.html">
+                    <div class="card-body">
+
+                        <h5 class="card-text text-right ">لأول مرة،، هاتف آيفون يحتوي منفذين لبطاقات الاتصال SIM
+                            .</h5>
+                    </div>
+                </a>
+                <div class="container text-black-50 pb-2 bg-white text-right">
+                    <span class="date">25/3/2000</span>
+                </div>
+            </div>
+            <div style="width: 350px;" class="card  ">
+                <video style="width: 350px; " width="" height="" controls>
+                    <!-- test inert real vedio -->
+                    <source src="../assets/160767 (720p).mp4" type=video/mp4>
+                </video>
+                <a href="../pages/images.html">
+                    <div class="card-body">
+
+                        <h5 class="card-text text-right ">لأول مرة،، هاتف آيفون يحتوي منفذين لبطاقات الاتصال SIM
+                            .</h5>
+                    </div>
+                </a>
+                <div class="container text-black-50 pb-2 bg-white text-right">
+                    <span class="date">25/3/2000</span>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
-<a href="#" class="to-top">
-    <i class="fas fa-chevron-up"></i>
-</a>
+
+    <a href="#" class="to-top">
+        <i class="fas fa-chevron-up"></i>
+    </a>
+    <footer>
+        <div class="row  d-flex mx-auto container mx-auto final   text-capitalize text-white  ">
+            <div class=" col-md-6 col-lg-4 col-sm-8 text-sm-center text-lg-right mx-auto pt-3">الحقوق محفوظة لشبكة
+                بيسان
+                الإخبارية (2018)</div>
+            <div class=" col-md-6 mx-auto col-lg-4 col-sm-8 text-sm-center text-lg-center pt-3 ">
+                <ul class="d-flex links justify-content-center ">
+                    <li class=" bg-white text-danger mb-sm-3 "><a class="twitter" href=""><i
+                                class="fab fa-twitter"></i></a></li>
+                    <li class=" bg-white text-danger mb-sm-3 "><a class="facebook" href=""><i
+                                class="fab fa-facebook-f"></i></a></li>
+                    <li class=" bg-white text-danger mb-sm-3 "><a class="youtube" href=""><i
+                                class="fab fa-youtube"></i></a></li>
+                </ul>
+            </div>
+            <div
+                class=" col-md-6 col-lg-4 col-sm-8 text-left mx-auto text-sm-center text-lg-left pt-lg-3 pb-md-3 pb-sm-3">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="54px"
+                    height="43px">
+                    <image x="0px" y="0px" width="54px" height="43px"
+                        xlink:href="data:img/png;base64,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" />
+                </svg>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="../assets/js/main.js"></script>
+    <script src="../assets/js/lightbox-plus-jquery.js"></script>
+    <script src="../assets/js/videolist.js"></script>
+    <script src="../assets/js/scroll.js"></script>
+
+    <!-- vendor files -->
+    <script src="../assets/vendor/jquery/jquery.min.js"></script>
+    <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
 
-     <!-- Bootstrap core JavaScript -->
-     <script src="../assets/js/main.js"></script>
-     <script src="../assets/js/lightbox-plus-jquery.js"></script>
-     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.min.js"
-         integrity="sha512-3dZ9wIrMMij8rOH7X3kLfXAzwtcHpuYpEgQg1OA4QAob1e81H8ntUQmQm3pBudqIoySO5j0tHN4ENzA6+n2r4w=="
-         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-     <script src="../assets/vendor/jquery/jquery.min.js"></script>
-     <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-     <script src="../assets/js/videolist.js"></script>
-     <script src="../assets/js/scroll.js"></script>
-
- 
 </body>
+
 </html>
