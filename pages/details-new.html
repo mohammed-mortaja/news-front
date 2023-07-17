@@ -4,18 +4,24 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Document</title>
-        <!-- Bootstrap core CSS -->
-        <link href="../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.1/css/bootstrap-grid.min.css"
-            integrity="sha512-Aa+z1qgIG+Hv4H2W3EMl3btnnwTQRA47ZiSecYSkWavHUkBF2aPOIIvlvjLCsjapW1IfsGrEO3FU693ReouVTA=="
-            crossorigin="anonymous" referrerpolicy="no-referrer" />
-    
-        <!-- Custom styles for this template -->
-        <link rel="stylesheet" href="../assets/css/style.css">
-    
-        <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.2.1/css/all.css">
-        <link rel="stylesheet" type="text/css" href="https://www.fontstatic.com/f=neckar-bold" />
-    
+     <!-- Bootstrap core CSS -->
+     <link href="../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.1/css/bootstrap-grid.min.css"
+         integrity="sha512-Aa+z1qgIG+Hv4H2W3EMl3btnnwTQRA47ZiSecYSkWavHUkBF2aPOIIvlvjLCsjapW1IfsGrEO3FU693ReouVTA=="
+         crossorigin="anonymous" referrerpolicy="no-referrer" />
+ 
+     <!-- Custom styles for this template -->
+     <link rel="stylesheet" href="../assets/css/style.css">
+     <link rel="stylesheet" href="../assets/css/lightbox.css">
+ 
+     <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.2.1/css/all.css">
+     
+     <!-- fonts -->
+     <!-- <link rel="stylesheet" type="text/css" href="https://www.fontstatic.com/f=neckar-bold" /> -->
+     <link  rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Harmattan:wght@500&display=swap" >
+     <link  rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Harmattan:wght@500&family=Marhey&display=swap" >
+ 
+</head>
     </head>
 
 <body>
@@ -211,6 +217,40 @@
                         </div>
                     </div>
                 </div>
+                <div class="my-5 pt-5 pl-5 d-flex justify-content-between comments border-bottom ">
+                    <p>التعليقات : <span>0</span></p>
+                    <div class="filter-commits">
+                        <form action="/action_page.php">
+                            <label for="cars">اختر حسب:</label>
+                            <select name="cars" id="cars">
+                              <option value="volvo">الاقدم </option>
+                              <option value="saab">الاقدم </option>
+                              <option value="opel">الاقدم </option>
+                              <option value="audi">الاقدم </option>
+                            </select>
+                          </form>                        
+                    </div>
+                </div>
+                <div class="container-2-col-commits  pb-5">
+                    <div class=" ">
+                        <img style="width: 70px; height: 80px; background: #000;" src=".#" alt="">
+                    </div>
+                    <div class=" ">
+                        <textarea style="width: 100%; height: 100px;">
+
+                        </textarea>
+                    </div>
+                </div>
+         
+                <div class="border-top pt-3 ">
+                    <a class="d-inline-block" href="#">
+                        <i class="fab fa-facebook-f"></i>
+                        المكون الاضافي على فيسبوك
+                    </a>
+                  </div>
+
+
+                
             </div>
             <div class="col-lg-4 related-side pt-sm-5 p-lg-0  ">
                 <div class="side-one ">
@@ -339,10 +379,13 @@
     </footer>
 
        <!-- Bootstrap core JavaScript -->
-       <script src="../assets/js/main.js"></script>
-       <script src="../assets/vendor/jquery/jquery.min.js"></script>
-       <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-   
+    <!-- Bootstrap core JavaScript -->
+    <script src="../assets/js/main.js"></script>
+    <script src="../assets/js/lightbox-plus-jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.min.js" integrity="sha512-3dZ9wIrMMij8rOH7X3kLfXAzwtcHpuYpEgQg1OA4QAob1e81H8ntUQmQm3pBudqIoySO5j0tHN4ENzA6+n2r4w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="../assets/vendor/jquery/jquery.min.js"></script>
+    <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
 </body>
 
 </html>
