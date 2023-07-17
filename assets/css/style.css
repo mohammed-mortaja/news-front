@@ -1,5 +1,5 @@
 :root {
-  --main-color: #ff6e61;
+  --main-color: #f13b2a;
   --section: #f1f3f4;
   --final-sec: #11151d;
 }
@@ -8,9 +8,72 @@
     margin: 0;
     padding: 0;
   } */
+  html{
+    scroll-behavior: smooth;
+  }
 body{
   font-family: 'Marhey', cursive;
 }
+
+/* header */
+header {
+  --text: #f4f4f4;
+  --text-inverse: #333;
+  --background: transparent;
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+  transition: background 250ms ease-in;
+  background: var(--background);
+  color: var(--text);
+}
+ header.sticky{
+  background: #914581;
+ }
+ header.sticky a{
+
+  color: #fff !important;
+ }
+.nav-scrolled {
+  --text: #333;
+  --text-inverse: #f4f4f4;
+  --background: #f4f4f4;
+  box-shadow: 0 3px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* scrol to top up */
+.to-top{
+  background: var(--main-color);
+  position: fixed;
+  bottom: 16px;
+  right: 32px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 32px;
+  color: #ffffff;
+  text-decoration: none;
+  opacity: 0;
+  pointer-events: none;
+  transition: all .4s;
+  cursor: pointer;
+}
+a:hover{
+  color: white;
+  text-decoration: none;
+
+}
+.to-top.active{
+  bottom: 32px;
+  pointer-events: auto;
+  opacity: 1;
+}
+
 /* 4 columns */
 .container-4-columns{
   display: grid;
@@ -210,7 +273,7 @@ header a,
 .links li {
   background-color: red;
   border-radius: 50%;
-  width: 30px;
+  width: 35px;
   height: 30px;
   text-align: center;
   padding-top: 2px;
@@ -219,14 +282,17 @@ header a,
 
 .links li .twitter:hover {
   color: rgb(233, 191, 231);
+  transition: .5s;
 }
 
 .links li .facebook:hover {
   color: rgb(190, 66, 184);
+  transition: .5s;
 }
 
 .links li .youtube:hover {
   color: rgb(199, 54, 35);
+  transition: .5s;
 }
 /* end header */
 
