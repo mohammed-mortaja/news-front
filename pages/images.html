@@ -1,29 +1,38 @@
 <!DOCTYPE html>
-<html lang="ar" dir="rtl">
+<html lang="ar" dir="ltr">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <!-- lightgallery -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.1/css/lightgallery.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.1/css/lg-autoplay.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.1/css/lg-fullscreen.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.1/css/lg-share.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.1/css/lg-zoom.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.1/css/lg-thumbnail.min.css" />
     <!-- Bootstrap core CSS -->
     <link href="../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
     <!--  styles for this template -->
     <link rel="stylesheet" href="../assets/css/style.css">
-    <link rel="stylesheet" href="../assets/css/lightbox.css">
 
     <!-- icons -->
     <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.2.1/css/all.css">
 
     <!-- fonts -->
-    <!-- <link rel="stylesheet" type="text/css" href="https://www.fontstatic.com/f=neckar-bold" /> -->
+    <link rel="stylesheet" type="text/css" href="https://www.fontstatic.com/f=neckar-bold" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Harmattan:wght@500&display=swap">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Harmattan:wght@500&family=Marhey&display=swap">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Harmattan:wght@500&family=Marhey&display=swap">
+
 </head>
-<body>
 
-    <header class="nav-scrolled">
+<body dir="">
 
+    <header class="nav-scrolled" dir="rtl">
         <nav class="navbar navbar-light navbar-expand-lg bg-body-tertiary">
             <div class="container align-items-center">
                 <a class="navbar-brand" href="#">
@@ -36,12 +45,13 @@
                         <span class="logo-text ">الاخباري</span>
                     </div>
                 </a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <i class="fa-duotone fa-bars text-danger"></i>
-            </button>
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <i class="fa-duotone fa-bars text-danger"></i>
+                </button>
                 <div class="collapse  navbar-collapse" id="navbarSupportedContent">
-                    <ul class=" navbar-nav mr-auto mb-2 mb-lg-0">
+                    <ul class=" navbar-nav mr-auto mb-2 ml3 mb-lg-0">
                         <li class="nav-item active-item">
                             <a class="nav-link active " aria-current="page" href="../pages/index.html">الرئيسية</a>
                         </li>
@@ -60,14 +70,14 @@
                         <li class="nav-item">
                             <a class="nav-link" href="../pages/contact.html">اتصل بنا</a>
                         </li>
-                        <ul class="navbar-nav mr-auto mb-2 mb-lg-0   text-white links ">
-                            <li class="d-inline-block mb-sm-3 "><a class="twitter" href=""><i
-                                        class="fab fa-twitter"></i></a></li>
-                            <li class="d-inline-block mb-sm-3 "><a class="facebook" href=""><i
+                        <ul
+                            class="navbar-nav mr-5  mb-2 mb-lg-0   text-white nav-links links d-flex align-items-center pt-2">
+                            <li class=" mb-sm-3 "><a class="twitter" href=""><i class="fab fa-twitter"></i></a></li>
+                            <li class="d-block mb-sm-3 "><a class="facebook" href=""><i
                                         class="fab fa-facebook-f"></i></a></li>
-                            <li class="d-inline-block mb-sm-3 "><a class="youtube" href=""><i
-                                        class="fab fa-youtube"></i></a></li>
-                            <li class="d-inline-block mb-sm-3 "><a href=""><i class="fal fa-search"></i></a></li>
+                            <li class="d-block mb-sm-3 "><a class="youtube" href=""><i class="fab fa-youtube"></i></a>
+                            </li>
+                            <li class="d-block mb-sm-3 "><a href=""><i class="fal fa-search"></i></a></li>
                         </ul>
                     </ul>
 
@@ -90,53 +100,49 @@
 
     <main class="cont">
         <div class="gallery">
-            <a href="../assets/images/caralbum.png" data-lightbox="models" data-title="Caption1">
-                <img src="../assets/images/caralbum.png" alt="">
+            <a href="../assets/images/1.jpg">
+                <img src="../assets/images/1.jpg" alt="">
             </a>
-            <a href="../assets/images/natuer.png" data-lightbox="models" data-title="Caption2">
-                <img src="../assets/images/natuer.png" alt="">
+            <a href="../assets/images/2.jpg">
+                <img src="../assets/images/2.jpg" alt="">
             </a>
-            <a href="../assets/images/natuer.png" data-lightbox="models" data-title="Caption3">
-                <img src="../assets/images/natuer.png" alt="">
+            <a href="../assets/images/1.jpg">
+                <img src="../assets/images/1.jpg" alt="">
             </a>
-            <a href="../assets/images/natuer.png" data-lightbox="models" data-title="Caption4">
-                <img src="../assets/images/natuer.png" alt="">
+            <a href="../assets/images/2.jpg">
+                <img src="../assets/images/2.jpg" alt="">
             </a>
-
-            <a href="../assets/images/natuer.png" data-lightbox="models" data-title="Caption5">
-                <img src="../assets/images/natuer.png" alt="">
+            <a href="../assets/images/1.jpg">
+                <img src="../assets/images/1.jpg" alt="">
             </a>
-            <a href="../assets/images/natuer.png" data-lightbox="models" data-title="Caption6">
-                <img src="../assets/images/natuer.png" alt="">
-            </a>
-            <a href="../assets/images/natuer.png" data-lightbox="models" data-title="Caption7">
-                <img src="../assets/images/natuer.png" alt="">
-            </a>
-            <a href="../assets/images/natuer.png" data-lightbox="models" data-title="Caption8">
-                <img src="../assets/images/natuer.png" alt="">
+            <a href="../assets/images/2.jpg">
+                <img src="../assets/images/2.jpg" alt="">
             </a>
         </div>
-        <a href="#" class="to-top">
-            <i class="fas fa-chevron-up"></i>
-        </a>
     </main>
 
-    <footer>
-        <div class="row  d-flex mx-auto container mx-auto final   text-capitalize text-white  ">
-            <div class=" col-md-6 col-lg-4 col-sm-8 text-sm-center text-lg-right mx-auto pt-3">الحقوق محفوظة لشبكة بيسان
+    <a href="#" class="to-top">
+        <i class="fas fa-chevron-up"></i>
+    </a>
+
+
+    <footer dir="rtl">
+        <div class=" footer text-white  ">
+            <div class=" mx-auto  ">الحقوق محفوظة لشبكة
+                بيسان
                 الإخبارية (2018)</div>
-            <div class=" col-md-6 mx-auto col-lg-4 col-sm-8 text-sm-center text-lg-center pt-3 ">
-                <ul class="d-flex links justify-content-center ">
-                    <li class=" bg-white text-danger mb-sm-3 "><a class="twitter" href=""><i
+            <div class=" d-flex  justify-content-center  ">
+                <ul class="d-flex links justify-content-center  ">
+                    <li class="mt-4 bg-white text-danger mb-sm-3 "><a class="twitter" href=""><i
                                 class="fab fa-twitter"></i></a></li>
-                    <li class=" bg-white text-danger mb-sm-3 "><a class="facebook" href=""><i
+                    <li class="mt-4 bg-white text-danger mb-sm-3 "><a class="facebook" href=""><i
                                 class="fab fa-facebook-f"></i></a></li>
-                    <li class=" bg-white text-danger mb-sm-3 "><a class="youtube" href=""><i
+                    <li class="mt-4 bg-white text-danger mb-sm-3 "><a class="youtube" href=""><i
                                 class="fab fa-youtube"></i></a></li>
                 </ul>
             </div>
             <div
-                class=" col-md-6 col-lg-4 col-sm-8 text-left mx-auto text-sm-center text-lg-left pt-lg-3 pb-md-3 pb-sm-3">
+                class="mx-auto">
                 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="54px"
                     height="43px">
                     <image x="0px" y="0px" width="54px" height="43px"
@@ -147,13 +153,45 @@
     </footer>
     <!-- Bootstrap core JavaScript -->
     <script src="../assets/js/main.js"></script>
-    <script src="../assets/js/lightbox-plus-jquery.js"></script>
     <script src="../assets/js/videolist.js"></script>
     <script src="../assets/js/scroll.js"></script>
 
     <!-- vendor files -->
     <script src="../assets/vendor/jquery/jquery.min.js"></script>
     <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- script lightGallery library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.1/lightgallery.min.js"></script>
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.1/plugins/autoplay/lg-autoplay.min.js"></script>
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.1/plugins/fullscreen/lg-fullscreen.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.1/plugins/share/lg-share.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.1/plugins/zoom/lg-zoom.min.js"></script>
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.1/plugins/thumbnail/lg-thumbnail.min.js"></script>
+        <script>
+            let gallery = document.querySelector('.gallery');
+            lightGallery(gallery, {
+                plugins: [lgFullscreen, lgShare, lgZoom, lgThumbnail], // Include the lgThumbnail plugin
+                controls: true,
+                counter: true,
+                download: false,
+                autoplay: true,
+                autoplaySpeed: 1000,
+                pauseOnHover: true,
+                getThumbContHeight: function () {
+                    return 100; // Adjust the height of the thumbnail container as needed
+                },
+                thumbWidth: 100, // Adjust the width of each thumbnail as needed
+                thumbHeight: '80px', // Adjust the height of each thumbnail as needed
+                thumbMargin: 10, // Adjust the margin between thumbnails as needed
+                thumbContHeight: 120 // Adjust the height of the thumbnail container as needed
+            });
+        </script>
+        
+
+
 
 </body>
 

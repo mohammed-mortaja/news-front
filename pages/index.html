@@ -1,29 +1,38 @@
 <!DOCTYPE html>
-<html lang="ar" dir="rtl">
+<html lang="ar" >
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <!-- lightgallery -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.1/css/lightgallery.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.1/css/lg-autoplay.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.1/css/lg-fullscreen.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.1/css/lg-share.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.1/css/lg-zoom.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.1/css/lg-thumbnail.min.css" />
+
     <!-- Bootstrap core CSS -->
     <link href="../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
     <!--  styles for this template -->
     <link rel="stylesheet" href="../assets/css/style.css">
-    <link rel="stylesheet" href="../assets/css/lightbox.css">
 
     <!-- icons -->
     <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.2.1/css/all.css">
 
     <!-- fonts -->
-    <!-- <link rel="stylesheet" type="text/css" href="https://www.fontstatic.com/f=neckar-bold" /> -->
+    <link rel="stylesheet" type="text/css" href="https://www.fontstatic.com/f=neckar-bold" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Harmattan:wght@500&display=swap">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Harmattan:wght@500&family=Marhey&display=swap">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Harmattan:wght@500&family=Marhey&display=swap">
 </head>
 
 <body>
 
-    <header class="nav-scrolled">
+    <header class="nav-scrolled" dir="rtl">
         <nav class="navbar navbar-light navbar-expand-lg bg-body-tertiary">
             <div class="container align-items-center">
                 <a class="navbar-brand" href="#">
@@ -36,12 +45,13 @@
                         <span class="logo-text ">الاخباري</span>
                     </div>
                 </a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <i class="fa-duotone fa-bars text-danger"></i>
-            </button>
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <i class="fa-duotone fa-bars text-danger"></i>
+                </button>
                 <div class="collapse  navbar-collapse" id="navbarSupportedContent">
-                    <ul class=" navbar-nav mr-auto mb-2 mb-lg-0">
+                    <ul class=" navbar-nav mr-auto mb-2 ml3 mb-lg-0">
                         <li class="nav-item active-item">
                             <a class="nav-link active " aria-current="page" href="../pages/index.html">الرئيسية</a>
                         </li>
@@ -60,14 +70,11 @@
                         <li class="nav-item">
                             <a class="nav-link" href="../pages/contact.html">اتصل بنا</a>
                         </li>
-                        <ul class="navbar-nav mr-auto mb-2 mb-lg-0   text-white links ">
-                            <li class="d-inline-block mb-sm-3 "><a class="twitter" href=""><i
-                                        class="fab fa-twitter"></i></a></li>
-                            <li class="d-inline-block mb-sm-3 "><a class="facebook" href=""><i
-                                        class="fab fa-facebook-f"></i></a></li>
-                            <li class="d-inline-block mb-sm-3 "><a class="youtube" href=""><i
-                                        class="fab fa-youtube"></i></a></li>
-                            <li class="d-inline-block mb-sm-3 "><a href=""><i class="fal fa-search"></i></a></li>
+                        <ul class="navbar-nav mr-5 text-white nav-links links d-flex flex-row pt-2 pr-5 mr-auto">
+                            <li class="  "><a class="twitter" href=""><i class="fab fa-twitter"></i></a></li>
+                            <li class=" "><a class="facebook" href=""><i class="fab fa-facebook-f"></i></a></li>
+                            <li class="  "><a class="youtube" href=""><i class="fab fa-youtube"></i></a></li>
+                            <li class=" "><a href=""><i class="fal fa-search"></i></a></li>
                         </ul>
                     </ul>
 
@@ -76,9 +83,7 @@
         </nav>
     </header>
 
-
-
-    <main class="py-3 ">
+    <main class="py-3" dir="rtl">
         <div class="container home-intro">
             <!-- شريط الاخبار -->
             <div class="row news-ticker text-justify border py-4  border-1 ">
@@ -414,144 +419,142 @@
                 </div>
             </div>
 
-            <div class="row pt-5 ">
-                <div class="text-right  mb-3">
-                    <span class=" mark-title">
-                    </span>
-                    <span class="more-news text-black"> عربي ودولي
-                    </span>
-                </div>
-                <div class="container-3-columns">
-                    <div class=" text-right pt-3 ">
-                        <div style="width: 330px; height: 285px; background-image: url(../assets/images/pals.png);"
-                            class="column position-relative ">
-                            <a href="../pages/details-new.html">
-                                <div class="text text-right bottom-right text-white ">
-                                    <h5 class="card-text text-right">الاحتلال يكشف عن مهام واسم أبرز وحداته في أحداث غزة
-                                        .</h5>
-                                    <span class="date "> 22/1/2001 </span>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="box d-flex align-items-center py-3 ">
-                            <div style="width: 100px; height: 75px; background-image: url(../assets/images/100-75.png);"
-                                class=" text-right">
-                                <a href="../pages/details-new.html"> </a>
+            <div class="text-right  mb-3">
+                <span class=" mark-title">
+                </span>
+                <span class="more-news text-black"> عربي ودولي
+                </span>
+            </div>
+            <div class="container-3-columns">
+                <div class=" text-right pt-3 ">
+                    <div style="width: 330px; height: 285px; background-image: url(../assets/images/pals.png);"
+                        class="column position-relative ">
+                        <a href="../pages/details-new.html">
+                            <div class="text text-right bottom-right text-white ">
+                                <h5 class="card-text text-right">الاحتلال يكشف عن مهام واسم أبرز وحداته في أحداث غزة
+                                    .</h5>
+                                <span class="date "> 22/1/2001 </span>
                             </div>
-                            <div class="text text-right  text-black mr-3">
-                                <h6 class="text-right ">مسافر يختطف طائرة بقلم حبر
-                                </h6>
-                                <span class="date text-black-50"> 22/1/2001 </span>
-                            </div>
+                        </a>
+                    </div>
+                    <div class="box d-flex align-items-center py-3 ">
+                        <div style="width: 100px; height: 75px; background-image: url(../assets/images/100-75.png);"
+                            class=" text-right">
+                            <a href="../pages/details-new.html"> </a>
                         </div>
+                        <div class="text text-right  text-black mr-3">
+                            <h6 class="text-right ">مسافر يختطف طائرة بقلم حبر
+                            </h6>
+                            <span class="date text-black-50"> 22/1/2001 </span>
+                        </div>
+                    </div>
 
+                </div>
+                <div class="">
+                    <div class="box d-flex align-items-center py-3 ">
+                        <div style="width: 100px; height: 75px; background-image: url(../assets/images/100-75.png);"
+                            class=" text-right">
+                            <a href="../pages/details-new.html"> </a>
+                        </div>
+                        <div class="text text-right  text-black mr-3">
+                            <h6 class="text-right ">مسافر يختطف طائرة بقلم حبر
+                            </h6>
+                            <span class="date text-black-50"> 22/1/2001 </span>
+                        </div>
+                    </div>
+                    <div class="box d-flex align-items-center py-3 ">
+                        <div style="width: 100px; height: 75px; background-image: url(../assets/images/100-75.png);"
+                            class=" text-right">
+                            <a href="../pages/details-new.html"> </a>
+                        </div>
+                        <div class="text text-right  text-black mr-3">
+                            <h6 class="text-right ">مسافر يختطف طائرة بقلم حبر
+                            </h6>
+                            <span class="date text-black-50"> 22/1/2001 </span>
+                        </div>
+                    </div>
+                    <div class="box d-flex align-items-center  py-3  ">
+                        <div style="width: 100px; height: 75px; background-image: url(../assets/images/100-75.png);"
+                            class="text-right">
+                            <a href="../pages/details-new.html"> </a>
+                        </div>
+                        <div class="text text-right  text-black mr-3 ">
+                            <h6 class="text-right ">مسافر يختطف طائرة بقلم حبر
+                            </h6>
+                            <span class="date text-black-50"> 22/1/2001 </span>
+                        </div>
+                    </div>
+                    <div class="box d-flex align-items-center py-3   ">
+                        <div style="width: 100px; height: 75px; background-image: url(../assets/images/100-75.png);"
+                            class="text-right">
+                            <a href="../pages/details-new.html"> </a>
+                        </div>
+                        <div class="text text-right  text-black  mr-3">
+                            <h6 class="text-right ">مسافر يختطف طائرة بقلم حبر
+                            </h6>
+                            <span class="date text-black-50"> 22/1/2001 </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="artic border py-3 px-3 ">
+                    <div class="text-right  mb-3">
+                        <span class=" mark-title">
+                        </span>
+                        <span class="more-news text-black"> مقالات
+                        </span>
                     </div>
                     <div class="">
                         <div class="box d-flex align-items-center py-3 ">
-                            <div style="width: 100px; height: 75px; background-image: url(../assets/images/100-75.png);"
+                            <div style="width: 78px; height: 78px; border-radius: 50%; background-image: url(../assets/images/100-75.png);"
                                 class=" text-right">
                                 <a href="../pages/details-new.html"> </a>
                             </div>
                             <div class="text text-right  text-black mr-3">
                                 <h6 class="text-right ">مسافر يختطف طائرة بقلم حبر
                                 </h6>
-                                <span class="date text-black-50"> 22/1/2001 </span>
+                                <span class="date text-black-50"> محمد مرتجى </span>
                             </div>
                         </div>
+
                         <div class="box d-flex align-items-center py-3 ">
-                            <div style="width: 100px; height: 75px; background-image: url(../assets/images/100-75.png);"
+                            <div style="width: 78px; height: 78px; border-radius: 50%; background-image: url(../assets/images/100-75.png);"
                                 class=" text-right">
                                 <a href="../pages/details-new.html"> </a>
                             </div>
                             <div class="text text-right  text-black mr-3">
                                 <h6 class="text-right ">مسافر يختطف طائرة بقلم حبر
                                 </h6>
-                                <span class="date text-black-50"> 22/1/2001 </span>
+                                <span class="date text-black-50"> محمد مرتجى </span>
                             </div>
                         </div>
-                        <div class="box d-flex align-items-center  py-3  ">
-                            <div style="width: 100px; height: 75px; background-image: url(../assets/images/100-75.png);"
-                                class="text-right">
+
+                        <div class="box d-flex align-items-center py-3 ">
+                            <div style="width: 78px; height: 78px; border-radius: 50%; background-image: url(../assets/images/100-75.png);"
+                                class=" text-right">
                                 <a href="../pages/details-new.html"> </a>
                             </div>
-                            <div class="text text-right  text-black mr-3 ">
+                            <div class="text text-right  text-black mr-3">
                                 <h6 class="text-right ">مسافر يختطف طائرة بقلم حبر
                                 </h6>
-                                <span class="date text-black-50"> 22/1/2001 </span>
+                                <span class="date text-black-50"> محمد مرتجى </span>
                             </div>
                         </div>
-                        <div class="box d-flex align-items-center py-3   ">
-                            <div style="width: 100px; height: 75px; background-image: url(../assets/images/100-75.png);"
-                                class="text-right">
+
+                        <div class="box d-flex align-items-center py-3 ">
+                            <div style="width: 78px; height: 78px; border-radius: 50%; background-image: url(../assets/images/100-75.png);"
+                                class=" text-right">
                                 <a href="../pages/details-new.html"> </a>
                             </div>
-                            <div class="text text-right  text-black  mr-3">
+                            <div class="text text-right  text-black mr-3">
                                 <h6 class="text-right ">مسافر يختطف طائرة بقلم حبر
                                 </h6>
-                                <span class="date text-black-50"> 22/1/2001 </span>
+                                <span class="date text-black-50"> محمد مرتجى </span>
                             </div>
                         </div>
+
                     </div>
-                    <div class="artic border py-3 px-3 ">
-                        <div class="text-right  mb-3">
-                            <span class=" mark-title">
-                            </span>
-                            <span class="more-news text-black"> مقالات
-                            </span>
-                        </div>
-                        <div class="">
-                            <div class="box d-flex align-items-center py-3 ">
-                                <div style="width: 78px; height: 78px; border-radius: 50%; background-image: url(../assets/images/100-75.png);"
-                                    class=" text-right">
-                                    <a href="../pages/details-new.html"> </a>
-                                </div>
-                                <div class="text text-right  text-black mr-3">
-                                    <h6 class="text-right ">مسافر يختطف طائرة بقلم حبر
-                                    </h6>
-                                    <span class="date text-black-50"> محمد مرتجى </span>
-                                </div>
-                            </div>
-
-                            <div class="box d-flex align-items-center py-3 ">
-                                <div style="width: 78px; height: 78px; border-radius: 50%; background-image: url(../assets/images/100-75.png);"
-                                    class=" text-right">
-                                    <a href="../pages/details-new.html"> </a>
-                                </div>
-                                <div class="text text-right  text-black mr-3">
-                                    <h6 class="text-right ">مسافر يختطف طائرة بقلم حبر
-                                    </h6>
-                                    <span class="date text-black-50"> محمد مرتجى </span>
-                                </div>
-                            </div>
-
-                            <div class="box d-flex align-items-center py-3 ">
-                                <div style="width: 78px; height: 78px; border-radius: 50%; background-image: url(../assets/images/100-75.png);"
-                                    class=" text-right">
-                                    <a href="../pages/details-new.html"> </a>
-                                </div>
-                                <div class="text text-right  text-black mr-3">
-                                    <h6 class="text-right ">مسافر يختطف طائرة بقلم حبر
-                                    </h6>
-                                    <span class="date text-black-50"> محمد مرتجى </span>
-                                </div>
-                            </div>
-
-                            <div class="box d-flex align-items-center py-3 ">
-                                <div style="width: 78px; height: 78px; border-radius: 50%; background-image: url(../assets/images/100-75.png);"
-                                    class=" text-right">
-                                    <a href="../pages/details-new.html"> </a>
-                                </div>
-                                <div class="text text-right  text-black mr-3">
-                                    <h6 class="text-right ">مسافر يختطف طائرة بقلم حبر
-                                    </h6>
-                                    <span class="date text-black-50"> محمد مرتجى </span>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-
                 </div>
+
             </div>
 
 
@@ -573,7 +576,7 @@
                         </span>
                         <span class="more-news text-black"> الاسرى </span>
                     </div>
-                    <div style="img  width: 555px; height: 255px; background-image: url(../assets/images/555-255.png);"
+                    <div style="img   width: 555px; height: 255px; background-image: url(../assets/images/555-255.png);"
                         class="column position-relative  ">
                         <a href="../pages/details-new.html">
                             <div class="text text-right bottom-right text-white ">
@@ -623,7 +626,7 @@
                         </span>
                         <span class="more-news text-black"> العدو </span>
                     </div>
-                    <div style="img  width: 555px; height: 255px; background-image: url(../assets/images/555-255.png);"
+                    <div style="img   width: 555px; height: 255px; background-image: url(../assets/images/555-255.png);"
                         class="column position-relative  ">
                         <a href="../pages/details-new.html">
                             <div class="text text-right bottom-right text-white ">
@@ -673,7 +676,7 @@
 
         <!-- تقارير خاصة -->
         <div class="spec-artical bg-light  py-5">
-        
+
             <div class="container">
                 <div class="text-right mr-2  mb-3 ">
                     <span class=" mark-title">
@@ -681,8 +684,8 @@
                     <span class="more-news text-black"> تقارير خاصة </span>
                 </div>
             </div>
-            <div class="d-flex justify-content-center flex-wrap  ">  
-                
+            <div class="d-flex justify-content-center flex-wrap  ">
+
                 <div class="pt-1">
                     <div style=" margin-right: 2px; width: 284px; height: 250px; background-image: url(../assets/images/caralbum.png);"
                         class="column position-relative   ">
@@ -914,7 +917,7 @@
                         </span>
                         <span class="more-news text-black"> رياضة </span>
                     </div>
-                    <div style="img width: 555px; height: 255px; background-image: url(../assets/images/555-255.png);"
+                    <div style="img  width: 555px; height: 255px; background-image: url(../assets/images/555-255.png);"
                         class="column position-relative  ">
                         <a href="../pages/details-new.html">
                             <div class="text text-right bottom-right text-white ">
@@ -964,7 +967,7 @@
                         </span>
                         <span class="more-news text-black"> فنون وثقافة </span>
                     </div>
-                    <div style="img width: 555px; height: 255px; background-image: url(../assets/images/555-255.png);"
+                    <div style="img  width: 555px; height: 255px; background-image: url(../assets/images/555-255.png);"
                         class="column position-relative  ">
                         <a href="../pages/details-new.html">
                             <div class="text text-right bottom-right text-white ">
@@ -1151,18 +1154,39 @@
             </div>
         </div>
 
-        <div class="text-right pt-3 container mb-3 ">
+
+
+        <a href="#" class="to-top">
+            <i class="fas fa-chevron-up"></i>
+        </a>
+    </main>
+
+    <section class="album-image ">
+        <div class="text-right container mb-3" dir="rtl">
             <span class=" mark-title">
             </span>
             <span class="more-news text-black"> معرض الصور </span>
         </div>
-
-        <div class="container-3-image-album-columns ">
-            <div class="super-album">
-                <a href="../pages/images.html">
+        <div class=" gallery-section  ">
+            <div class="gallery container mb-5 image-album   " >
+                <a style="height: fit-content; width: 290px;" href="../assets/images/1.jpg">
+                    <div style="height: 310px;">
+                      <img src="../assets/images/1.jpg" alt="" style="width: 100%; height: 100%; object-fit: cover;">
+                    </div>
+                  </a>
+                  
+                  <a style="height: fit-content; width: 290px;" href="../assets/images/2.jpg">
+                    <div style="height: 310px;">
+                      <img src="../assets/images/2.jpg" alt="" style="width: 100%; height: 100%; object-fit: cover;">
+                    </div>
+                  </a>
+                  
+            </div>
+            <div class="cover-album ">
+                <a  style="height: fit-content; width: fit-content;" href="../pages/images.html">
                     <div style="background-image: url(../assets/images/569-310.png); background-size: cover; height: 310px;"
                         class="column position-relative ">
-                        <div class="text text-right top-right  text-white text-album">
+                        <div class="text text-right top-right  text-white text-album " dir="rtl">
                             <h6 class="card-text text-right ">محطة روسية جديدة تنضم إلى شبكة قياس المسافة بالليزر
                                 .</h6>
                         </div>
@@ -1170,42 +1194,29 @@
                     </div>
                 </a>
             </div>
-            <div class="sb-album ">
-                <a href="../assets/images/284-310.png" data-lightbox="models" data-title="Caption1">
-                    <img src="../assets/images/284-310.png" alt="">
-                </a>
-            </div>
-            <div class="sb-album ">
-                <a href="../assets/images/284-310.png" data-lightbox="models" data-title="Caption1">
-                    <img src="../assets/images/284-310.png" alt="">
-                </a>
-            </div>
         </div>
-
-        <a href="#" class="to-top">
-            <i class="fas fa-chevron-up"></i>
-        </a>
-    </main>
+    </section>
+    
 
 
+   
 
     <footer>
-        <div class="row  d-flex mx-auto container mx-auto final   text-capitalize text-white  ">
-            <div class=" col-md-6 col-lg-4 col-sm-8 text-sm-center text-lg-right mx-auto pt-3">الحقوق محفوظة لشبكة
+        <div class=" footer text-white  ">
+            <div class=" mx-auto  ">الحقوق محفوظة لشبكة
                 بيسان
                 الإخبارية (2018)</div>
-            <div class=" col-md-6 mx-auto col-lg-4 col-sm-8 text-sm-center text-lg-center pt-3 ">
-                <ul class="d-flex links justify-content-center ">
-                    <li class=" bg-white text-danger mb-sm-3 "><a class="twitter" href=""><i
+            <div class=" d-flex  justify-content-center  ">
+                <ul class="d-flex links justify-content-center  ">
+                    <li class="mt-4 bg-white text-danger mb-sm-3 "><a class="twitter" href=""><i
                                 class="fab fa-twitter"></i></a></li>
-                    <li class=" bg-white text-danger mb-sm-3 "><a class="facebook" href=""><i
+                    <li class="mt-4 bg-white text-danger mb-sm-3 "><a class="facebook" href=""><i
                                 class="fab fa-facebook-f"></i></a></li>
-                    <li class=" bg-white text-danger mb-sm-3 "><a class="youtube" href=""><i
+                    <li class="mt-4 bg-white text-danger mb-sm-3 "><a class="youtube" href=""><i
                                 class="fab fa-youtube"></i></a></li>
                 </ul>
             </div>
-            <div
-                class=" col-md-6 col-lg-4 col-sm-8 text-left mx-auto text-sm-center text-lg-left pt-lg-3 pb-md-3 pb-sm-3">
+            <div class="mx-auto">
                 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="54px"
                     height="43px">
                     <image x="0px" y="0px" width="54px" height="43px"
@@ -1217,13 +1228,43 @@
 
     <!-- Bootstrap core JavaScript -->
     <script src="../assets/js/main.js"></script>
-    <script src="../assets/js/lightbox-plus-jquery.js"></script>
     <script src="../assets/js/videolist.js"></script>
     <script src="../assets/js/scroll.js"></script>
 
     <!-- vendor files -->
     <script src="../assets/vendor/jquery/jquery.min.js"></script>
     <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- script lightGallery library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.1/lightgallery.min.js"></script>
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.1/plugins/autoplay/lg-autoplay.min.js"></script>
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.1/plugins/fullscreen/lg-fullscreen.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.1/plugins/share/lg-share.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.1/plugins/zoom/lg-zoom.min.js"></script>
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.1/plugins/thumbnail/lg-thumbnail.min.js"></script>
+    <script>
+        let gallery = document.querySelector('.gallery');
+        lightGallery(gallery, {
+            plugins: [lgFullscreen, lgShare, lgZoom, lgThumbnail], // Include the lgThumbnail plugin
+            controls: true,
+            counter: true,
+            download: false,
+            autoplay: true,
+            autoplaySpeed: 1000,
+            pauseOnHover: true,
+            getThumbContHeight: function () {
+                return 100; // Adjust the height of the thumbnail container as needed
+            },
+            thumbWidth: 100, // Adjust the width of each thumbnail as needed
+            thumbHeight: '80px', // Adjust the height of each thumbnail as needed
+            thumbMargin: 10, // Adjust the margin between thumbnails as needed
+            thumbContHeight: 120 // Adjust the height of the thumbnail container as needed
+        });
+    </script>
+
 
 </body>
 
