@@ -3,6 +3,7 @@
   --main-color: #cf1e1e;
   --section: #f1f3f4;
   --final-sec: #11151d;
+  --plyr-color-main:var(--main-color);
 }
 
 * {
@@ -26,12 +27,15 @@ html {
 
 body {
   font-family: nsa;
+  
 }
+
 
 textarea {
   width: 100%;
   height: 100px;
   background: #fff;
+  border-radius: 20px;
   -webkit-box-shadow: none !important;
   box-shadow: none !important;
   border: 1px solid rgba(0, 0, 0, 0.1);
@@ -73,7 +77,7 @@ a:hover {
 .category-title{
   font-family: nsa;
   font-size: 16px;
-  font-weight: 600;
+  font-weight: 700;
   color: var(--main-color);
   display: inline-block;
 }
@@ -81,7 +85,7 @@ a:hover {
   font-size: 18px;
   font-weight: normal;
   color: #222222;
-  
+
 }
 
 .main-btn {
@@ -104,8 +108,6 @@ a:hover {
 .bg-black-sec {
   background-image: linear-gradient(rgb(5, 5, 5), rgb(56, 56, 53));
 }
-
-
 
 .top-left {
   position: absolute;
@@ -139,7 +141,7 @@ a:hover {
   display: none;
   background-color: #282f35b2 ;
  }
- 
+
  .boxsearch input{
   outline: none;
   border: none;
@@ -164,11 +166,11 @@ a:hover {
   visibility: hidden;
  }
 
- .boxsearch ::placeholder{     
+ .boxsearch ::placeholder{
   color: white;
   font-size: 20px;
   font-style: italic;
-  opacity: 1; 
+  opacity: 1;
   text-align: center;
 
 }
@@ -179,14 +181,14 @@ a:hover {
   right: 110px;
   border: none;
   font-size: 40px !important;
-  color: var(--main-color) ;   
+  color: var(--main-color) ;
   padding: 10px;
   background:none;
   opacity: 1;
  }
  .boxsearch .search-icon{
   outline: none;
-  color: var(--main-color);   
+  color: var(--main-color);
   border-color: var(--main-color);
   border-right: none;
   border-width: 2px;
@@ -195,7 +197,7 @@ a:hover {
   font-size: 30px;
   background-color: #13131421   ;
   cursor: pointer;
-  
+
  }
 
 
@@ -206,7 +208,7 @@ a:hover {
 
 header {
   --text: #f4f4f4;
-  --text-inverse: #5f5454;
+  --text-inverse: #333;
   --background: transparent;
   position: sticky;
   top: 0;
@@ -280,10 +282,9 @@ header a {
   }
 }
 .nav-item a:hover{
-  color: var(--main-color) !important; 
+  color: var(--main-color) !important;
   transition: .5s !important;
 }
-
 
 header.sticky {
   background: var(--final-sec);
@@ -541,15 +542,13 @@ p {
 .fa-image {
   font-size: 25px;
 }
-.scc{
-  margin-top: 70px !important;
-}
+
 
   .scc2{
     margin-top: 50px !important;
   }
 
-  
+
 .gallery-section {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -568,21 +567,23 @@ p {
    align-items: center;
    flex-wrap: wrap;
    margin-left: 20px;
-   } 
+   }
   }
-  
+
   @media (max-width:991px) {
-    .gallery-section .gallery {
-     order: 1;
-     gap: 10px;
-     }
- 
- }
+     .gallery-section .gallery {
+      order: 1;
+      }
+      .scc{
+         margin-top: -30px !important;
+       }
+  }
+
 
  @media (max-width:768px) {
   .gallery-section {
     grid-template-columns: 1fr;
-    
+
   }
 }
 /* detail-news */
@@ -620,7 +621,7 @@ p {
 }
 .comments-number{
   font-weight: normal !important;
-} 
+}
 
 
 /* gallary page(معرض الصور)*/
@@ -654,9 +655,16 @@ p {
 
 .gallery img {
   width: 100%;
-
+  transition: .6s;
 }
 
+ /* .gallery .card{
+  overflow: hidden;
+ } */
+.gallery .card:hover img{
+ transform: scale(96%) ;
+ 
+}
 @media (min-width: 0) and (max-width: 768px) {
   .gallery {
     grid-template-columns: repeat(1, 1fr);
@@ -706,8 +714,9 @@ p {
 
 
 /* Start Video Playlis page*/
-
-
+.vedio-sec .box {
+  border: 1.5px solid rgba(71, 66, 66, 0.918);
+}
 
 .cont-vid {
   display: grid;
@@ -722,10 +731,10 @@ p {
 
 }
 
-.cont-vid .main-video video {
+/* .cont-vid .main-video iframe {
   width: 100%;
   border-radius: 5px;
-}
+} */
 
 .cont-vid .main-video video .title {
   font-size: 23px;
@@ -738,17 +747,13 @@ p {
   font-size: 23px;
   border-radius: 5px;
   height: 450px;
-  margin-top: 130px;
+  margin-top: 110px;
   overflow-y: scroll;
 }
 .cont-vid .video-list::-webkit-scrollbar,
 .cont-vid .video-list::-webkit-scrollbar-track,
 .cont-vid .video-list::-webkit-scrollbar-thumb {
   display: none;
-}
-.cont-vid .video-list .vid video {
-  width: 100px;
-  height: 75px;
 }
 
   .cont-vid .video-list .vid {
@@ -768,16 +773,17 @@ p {
   .cont-vid .video-list .vid.active  {
     background: #0c0c0c;
   }
-  
+
 .vid-co .play-fa {
   display: none;
 }
 
 .vid-co .play-fa-pause {
-  display: block;
+  display: none;
   color: #ff4f3f !important;
 
 }
+
 
 .vid.active .vid-co .play-fa {
   display: block;
@@ -804,19 +810,21 @@ p {
 
 
 @media (max-width:1200px) {
-  .cont-vid {
-    grid-template-columns: 1.5fr 1fr;
-    padding: 10px;
-  }
+ .cont-vid {
+   grid-template-columns: 1.5fr 1fr;
+   padding: 10px;
+ }
 }
 
 @media (max-width:891px) {
-  .cont-vid {
-    grid-template-columns: 1fr;
-  }
+ .cont-vid {
+   grid-template-columns: 1fr;
+ }
 }
 
 /* end Video Playlis */
+
+
 
 
 /*start contact page */
@@ -877,7 +885,7 @@ footer {
 
 @media (max-width:768px) {
   .footer {
-    grid-template-columns: 1fr;    
+    grid-template-columns: 1fr;
   }
 }
 
@@ -888,14 +896,14 @@ footer {
 .container-3-columns {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  gap: 10px;
+  gap: 30px;
   align-items: flex-start;
   padding: 5px 0;
 }
 
 @media (max-width:1200px) {
   .container-3-columns {
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr ;
     padding: 10px;
   }
 }
@@ -910,6 +918,11 @@ footer {
   .container-3-columns {
     grid-template-columns: 1fr;
   }
+}
+@media (min-width:768px) {
+  .scc{
+     margin-top: 80px !important;
+   }
 }
 
 /* 2 columns */
@@ -1017,8 +1030,21 @@ footer {
     grid-template-columns: 1fr;
   }
 }
+#playButton, #pauseButton {
+  padding: 10px 20px;
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-right: 10px;
+}
 
+#playButton:hover, #pauseButton:hover {
+  background-color: #2980b9;
+}
 
+/* customization on bootstrap */
 .no-gutters {
   margin-right: 1px !important;
   margin-left: 1px !important;
@@ -1028,5 +1054,17 @@ footer {
   > [class*="col-"] {
     padding-right: 1px !important;
     padding-left: 1px !important;
+  }
+}
+.contact .no-gutters{
+  margin-right: 0 !important;
+  margin-left: 0 !important;
+  margin-top: -50px !important;
+
+  > .col,
+  > [class*="col-"] {
+    padding-right: 30px !important;
+    padding-bottom: 0px !important;
+    padding-left: 100px !important;
   }
 }

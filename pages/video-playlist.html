@@ -19,6 +19,10 @@
   <!-- <link rel="stylesheet" type="text/css" href="https://www.fontstatic.com/f=neckar-bold" /> -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Harmattan:wght@500&display=swap">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Harmattan:wght@500&family=Marhey&display=swap">
+
+      <!-- video plyer -->
+      <link rel="stylesheet" href="https://cdn.plyr.io/3.7.8/plyr.css" />
+
 </head>
 
 <body class="bg-light">
@@ -82,83 +86,87 @@
     </nav>
 </header>
 <!-- vedio section  مكتبة الفيديو -->
-<div class="vedio-sec bg-black-sec pb-3">
-  <div class="cont-vid container" dir="rtl">
-      <div style="cursor: pointer;" class="main-video pt-5">
-          <div class="text-right mb-3 container">
-              <span class="">.</span>
+<div class="main   d-flex flex-column justify-content-center" style="min-height: 70vh;">
+  <div class="vedio-sec bg-black-sec pb-3">
+    <div class="cont-vid container" dir="rtl">
+        <div class="main-video pt-5 ">
+          <div style="padding: 0;" class="text-right mb-4 container">
+              <span >.</span>
           </div>
-          <div class="video active position-relative">
-              <video height="450" id="mainVideoElement" src="../assets/160767 (720p).mp4"></video>
-              <div class="play-vid"
-                  style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">
-                  <i class="fa-regular fa-play "></i>
-              </div>
+          <div class="plyr__video-embed" id="player1">
+              <iframe src="https://www.youtube.com/embed/H13cW1pYYcY"  
+                  allow="autoplay"></iframe>
           </div>
       </div>
-      <div class="video-list ">
+        <div class="video-list ">
           <div style="border-color:#1d1b1b;" class="vid text-right py-2 shahhed">
               <i class="fa-light fa-film"></i>
               <span class="title-sec text-white">شاهد</span>
           </div>
-          <div style="border-color:#333;" class="vid text-right ">
-              <video src="../assets/160767 (720p).mp4"></video>
+          <div style="border-color:#333; " class="vid text-right" data-src="https://www.youtube.com/embed/H13cW1pYYcY">
+              <div style="min-width: 100px;" class="plyr__video-embed bg-danger" id="player2">
+                  <iframe src="https://www.youtube.com/embed/H13cW1pYYcY"></iframe>
+              </div>
               <div class="vid-co pt-2">
                   <div class="play-fa">
                       <i style="font-size: 14px; margin-left: 5px;" class="fa-regular fa-pause"></i>
                       <span style="font-size: 14px; text-align: right;">قيد التشغيل</span>
                   </div>
-                  <p style="font-size: 14px; text-align: right;" class="title-vid ">
+                  <p style="font-size: 14px; text-align: right;" class="title-vid">
                       <span class="desc">"اقتراب بركان هاواي من محطة الطاقة الحرارية"</span><br>
                       <span style="font-size: 14px;" class="date text-white-50">22/1/2001</span>
                   </p>
               </div>
           </div>
-          <div style="border-color:#333;" class="vid text-right ">
-              <video src="../assets/160767 (720p).mp4"></video>
+          <div style="border-color:#333; " class="vid text-right" data-src="https://www.youtube.com/embed/CFTccBzBGQw">
+              <div style="min-width: 100px;" class="plyr__video-embed bg-danger" id="player3">
+                  <iframe src="https://www.youtube.com/embed/CFTccBzBGQw"></iframe>
+              </div>
               <div class="vid-co pt-2">
                   <div class="play-fa">
                       <i style="font-size: 14px; margin-left: 5px;" class="fa-regular fa-pause"></i>
                       <span style="font-size: 14px; text-align: right;">قيد التشغيل</span>
                   </div>
-                  <p style="font-size: 14px; text-align: right;" class="title-vid ">
+                  <p style="font-size: 14px; text-align: right;" class="title-vid">
                       <span class="desc">"اقتراب بركان هاواي من محطة الطاقة الحرارية"</span><br>
                       <span style="font-size: 14px;" class="date text-white-50">22/1/2001</span>
                   </p>
               </div>
           </div>
-          <div style="border-color:#333;" class="vid text-right ">
-              <video src="../assets/160767 (720p).mp4"></video>
+          <div style="border-color:#333; " class="vid text-right " data-src="https://www.youtube.com/embed/H13cW1pYYcY">
+              <div style="min-width: 100px;" class="plyr__video-embed bg-danger" id="player4">
+                  <iframe src="https://www.youtube.com/embed/H13cW1pYYcY"></iframe>
+              </div>
               <div class="vid-co pt-2">
                   <div class="play-fa">
                       <i style="font-size: 14px; margin-left: 5px;" class="fa-regular fa-pause"></i>
                       <span style="font-size: 14px; text-align: right;">قيد التشغيل</span>
                   </div>
-                  <p style="font-size: 14px; text-align: right;" class="title-vid ">
+                  <p style="font-size: 14px; text-align: right;" class="title-vid">
                       <span class="desc">"اقتراب بركان هاواي من محطة الطاقة الحرارية"</span><br>
                       <span style="font-size: 14px;" class="date text-white-50">22/1/2001</span>
                   </p>
               </div>
           </div>
-          <div style="border-color:#333;" class="vid text-right ">
-              <video src="../assets/160767 (720p).mp4"></video>
+          <div style="border-color:#333; " class="vid text-right" data-src="https://www.youtube.com/embed/CFTccBzBGQw">
+              <div style="min-width: 100px;" class="plyr__video-embed bg-danger" id="player5">
+                  <iframe src="https://www.youtube.com/embed/CFTccBzBGQw"></iframe>
+              </div>
               <div class="vid-co pt-2">
                   <div class="play-fa">
                       <i style="font-size: 14px; margin-left: 5px;" class="fa-regular fa-pause"></i>
                       <span style="font-size: 14px; text-align: right;">قيد التشغيل</span>
                   </div>
-                  <p style="font-size: 14px; text-align: right;" class="title-vid ">
+                  <p style="font-size: 14px; text-align: right;" class="title-vid">
                       <span class="desc">"اقتراب بركان هاواي من محطة الطاقة الحرارية"</span><br>
                       <span style="font-size: 14px;" class="date text-white-50">22/1/2001</span>
                   </p>
               </div>
           </div>
-         
       </div>
+    </div>
   </div>
 </div>
-
-
 
   <section class="container py-5">
     
@@ -310,6 +318,11 @@
       </div>
     </div>
   </footer>
+   <!-- video plyer -->
+
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/plyr/3.6.4/plyr.js"
+   integrity="sha512-M/AUlH5tMMuhvt9trN4rXBjsXq9HrOUmtblZHhesbx97sGycEnXX/ws1W7yyrF8zEjotdNhYNfHOd3WMu96eKA=="
+   crossorigin="anonymous"></script>
 
   <!-- Bootstrap core JavaScript -->
   <script src="../assets/js/main.js"></script>
