@@ -22,7 +22,6 @@ const player1 = new Plyr('#player1', {
   }
 });
 
-
 let listVideo = document.querySelectorAll('.video-list .vid');
 // const mainVideo = document.querySelector('.main-video');
 

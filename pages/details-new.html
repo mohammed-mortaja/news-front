@@ -9,7 +9,6 @@
     
         <!--  styles for this template -->
         <link rel="stylesheet" href="../assets/css/style.css">
-        <link rel="stylesheet" href="../assets/css/lightbox.css">
     
         <!-- icons -->
         <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.2.1/css/all.css">
